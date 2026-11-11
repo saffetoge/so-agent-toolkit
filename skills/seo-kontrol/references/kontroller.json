@@ -1,0 +1,1072 @@
+{
+  "gruplar": [
+    {
+      "kimlik": "temel",
+      "ad": "Temel meta ve sayfa yapısı"
+    },
+    {
+      "kimlik": "paylasim",
+      "ad": "Paylaşım önizlemesi (WhatsApp, Facebook, X, LinkedIn)"
+    },
+    {
+      "kimlik": "favicon",
+      "ad": "Favicon ve uygulama simgesi"
+    },
+    {
+      "kimlik": "sema",
+      "ad": "Yapısal veri (JSON-LD)"
+    },
+    {
+      "kimlik": "url",
+      "ad": "URL yapısı ve taranabilirlik"
+    },
+    {
+      "kimlik": "ai",
+      "ad": "Yapay zeka aramaları (ChatGPT, Claude, Perplexity, Gemini)"
+    },
+    {
+      "kimlik": "dogrulama",
+      "ad": "Arama motoru ve platform doğrulamaları"
+    },
+    {
+      "kimlik": "olcum",
+      "ad": "Ölçüm ve pazarlama etiketleri"
+    },
+    {
+      "kimlik": "performans",
+      "ad": "Görsel ve performans"
+    },
+    {
+      "kimlik": "kod",
+      "ad": "Kodda ve veride bakılanlar (HTML'den ölçülemez)"
+    }
+  ],
+  "kontroller": [
+    {
+      "kimlik": "title",
+      "grup": "temel",
+      "ad": "Örnek sayfalarda açıklayıcı ve özgün başlık",
+      "oncelik": "Yüksek",
+      "neden": "Başlık sayfanın konusunu anlatır; Google sonuç başlığını farklı kaynaklardan oluşturabilir.",
+      "cozum": "Her sayfaya içeriğini doğru anlatan özgün başlık yazın. Karakter sayısı sıralama eşiği değildir.",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=tr"
+      ]
+    },
+    {
+      "kimlik": "description",
+      "grup": "temel",
+      "ad": "Örnek sayfalarda meta açıklama",
+      "oncelik": "Orta",
+      "neden": "Özgün özet kullanıcıya yardımcı olur; Google snippet’i gövde içeriğinden de seçebilir.",
+      "cozum": "Sayfanın ayırt edici bilgisini doğal biçimde özetleyin; sabit karakter eşiğine göre metni bozmayın.",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=tr"
+      ]
+    },
+    {
+      "kimlik": "html_lang",
+      "grup": "temel",
+      "ad": "Sayfa dilini belirten html lang",
+      "oncelik": "Düşük",
+      "neden": "Dil sinyali, ekran okuyucu ve çeviri önerisi.",
+      "cozum": "İçeriğin gerçek diline uygun lang değeri kullanın; çok dilli sitede her sayfayı ayrı değerlendirin.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "viewport",
+      "grup": "temel",
+      "ad": "Mobil viewport",
+      "oncelik": "Yüksek",
+      "neden": "Google mobil öncelikli dizinler.",
+      "cozum": "width=device-width, initial-scale=1.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "robots_meta",
+      "grup": "temel",
+      "ad": "robots meta index ve direktif tutarlılığı",
+      "oncelik": "Yüksek",
+      "neden": "noindex sayfa hiç görünmez; noindex ile index/max-image-preview gibi çelişkili direktifler botları yanıltır.",
+      "cozum": "Vitrin sayfalarında index, follow; noindex sayfalarda çelişkili önizleme direktiflerini kaldırın.",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag?hl=tr"
+      ]
+    },
+    {
+      "kimlik": "max_image_preview",
+      "grup": "temel",
+      "ad": "max-image-preview:large",
+      "oncelik": "Düşük",
+      "neden": "Google Discover ve büyük görsel önizlemesi için izin.",
+      "cozum": "robots meta: index, follow, max-image-preview:large, max-snippet:-1.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "canonical",
+      "grup": "temel",
+      "ad": "Örnek sayfalarda canonical tutarlılığı",
+      "oncelik": "Yüksek",
+      "neden": "Canonical tercih edilen URL için sinyaldir; etiketi olmayan sayfa otomatik indeks dışı değildir.",
+      "cozum": "Kopyalarda doğru tercih edilen URL’yi belirleyin; hedefin erişimini, içeriğini ve indekslenebilirliğini doğrulayın.",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=tr"
+      ]
+    },
+    {
+      "kimlik": "tek_h1",
+      "grup": "temel",
+      "ad": "Anlaşılır ana başlık ve başlık yapısı",
+      "oncelik": "Orta",
+      "neden": "Başlıklar okuma ve erişilebilirlik için yararlıdır; Google için sihirli H1 sayısı yoktur.",
+      "cozum": "Sayfanın konusu anlaşılır olsun; sayım tek başına sıralama hatası değildir.",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=tr"
+      ]
+    },
+    {
+      "kimlik": "aciklama_benzersiz",
+      "grup": "temel",
+      "ad": "Kategori açıklaması örnek karşılaştırması",
+      "oncelik": "Orta",
+      "neden": "Aynı açıklama tüm kategorilerde tekrar ederse Google kendi seçer, AI özetinde kategori anlatılamaz.",
+      "cozum": "Kullanıcıya yararlı özgün kategori bilgisi ekleyin; sırf metin uzunluğu için şablon veya AI metni doldurmayın.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "og_temel",
+      "grup": "paylasim",
+      "ad": "og:title, description, image, url, type, site_name, locale",
+      "oncelik": "Yüksek",
+      "neden": "WhatsApp, Facebook, LinkedIn önizlemesi bu etiketlerle çizilir.",
+      "cozum": "Ortak SEO şablonunda yedi etiketin hepsi.",
+      "dayanak_turu": "platform",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "og_gorsel_anasayfa",
+      "grup": "paylasim",
+      "ad": "Ana sayfa paylaşım görseli erişimi ve ölçüsü",
+      "oncelik": "Yüksek",
+      "neden": "Önizleme platforma göre değişir; ölçü ve dosya boyutu önerileri paylaşım optimizasyonudur.",
+      "cozum": "Uygun kapak kullanın; 1200x630 pratik hedeftir, evrensel SEO zorunluluğu değildir. Gerçek platform önizlemesini doğrulayın.",
+      "dayanak_turu": "platform",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "og_gorsel_urun",
+      "grup": "paylasim",
+      "ad": "Ürün paylaşım görseli ürünün kendisi",
+      "oncelik": "Yüksek",
+      "neden": "Ürün linki paylaşıldığında ürün fotoğrafı görünmeli.",
+      "cozum": "og:image = ürün kapak görseli (en az 600x315, https).",
+      "dayanak_turu": "platform",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "og_gorsel_etiketleri",
+      "grup": "paylasim",
+      "ad": "og:image:width, height, alt",
+      "oncelik": "Orta",
+      "neden": "Facebook ve WhatsApp ilk paylaşımda görseli ölçü bilinmezse göstermeyebilir.",
+      "cozum": "Görsel ölçüsünü kayıtta tutup width/height/alt basın.",
+      "dayanak_turu": "platform",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "twitter_kart",
+      "grup": "paylasim",
+      "ad": "twitter:card large + twitter:site",
+      "oncelik": "Düşük",
+      "neden": "X önizlemesi ve hesap bağlantısı.",
+      "cozum": "summary_large_image ve @hesap adı.",
+      "dayanak_turu": "platform",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "og_urun",
+      "grup": "paylasim",
+      "ad": "Ürün sayfasında og:type=product + fiyat",
+      "oncelik": "Orta",
+      "neden": "Facebook/Instagram katalog ve Pinterest zengin pin fiyatı buradan okur.",
+      "cozum": "og:type product, product:price:amount, product:price:currency, product:availability.",
+      "dayanak_turu": "platform",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "favicon_link",
+      "grup": "favicon",
+      "ad": "<link rel=\"icon\"> etiketi",
+      "oncelik": "Orta",
+      "neden": "Tarayıcı sekmesi ve arama sonucundaki küçük simge.",
+      "cozum": "rel=icon ile PNG/SVG simge, sizes özniteliğiyle.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "favicon_ico",
+      "grup": "favicon",
+      "ad": "/favicon.ico dolu dosya",
+      "oncelik": "Orta",
+      "neden": "Birçok istemci, RSS okuyucu ve bazı mesajlaşma uygulamaları doğrudan /favicon.ico ister.",
+      "cozum": "Kök ICO sunuluyorsa geçerli dosya olsun. Google için rel=icon ile başka geçerli dosya da kullanılabilir.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "favicon_48",
+      "grup": "favicon",
+      "ad": "Google favicon kare ve en az 8x8",
+      "oncelik": "Orta",
+      "neden": "Güncel Google belgesinde en az 8x8 kare istenir; 48x48’den büyük önerilir, 48’in katı şart değildir.",
+      "cozum": "Erişilebilir, kare ve markayı temsil eden simge kullanın; 64x64 yalnız boyutu nedeniyle başarısız sayılmaz.",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/appearance/favicon-in-search"
+      ]
+    },
+    {
+      "kimlik": "apple_touch_icon",
+      "grup": "favicon",
+      "ad": "apple-touch-icon 180x180",
+      "oncelik": "Düşük",
+      "neden": "iPhone ana ekran ve bazı paylaşım önizlemeleri.",
+      "cozum": "180x180 PNG, rel=apple-touch-icon.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "manifest",
+      "grup": "favicon",
+      "ad": "Web app manifest",
+      "oncelik": "Düşük",
+      "neden": "Android ana ekran simgesi, tema rengi.",
+      "cozum": "site.webmanifest (192 ve 512 simge) + link rel=manifest.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "theme_color",
+      "grup": "favicon",
+      "ad": "theme-color",
+      "oncelik": "Düşük",
+      "neden": "Mobil tarayıcı çubuğu marka renginde görünür.",
+      "cozum": "<meta name=\"theme-color\" content=\"#marka\">.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "ld_gecerli",
+      "grup": "sema",
+      "ad": "JSON-LD hatasız ayrışıyor",
+      "oncelik": "Yüksek",
+      "neden": "Bozuk JSON-LD tamamen yok sayılır.",
+      "cozum": "json_encode ile üretin, elle string birleştirmeyin.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "org_sema",
+      "grup": "sema",
+      "ad": "Organization: @id, logo, sameAs, iletişim",
+      "oncelik": "Yüksek",
+      "neden": "Marka varlığı (Knowledge Graph) ve AI asistanların firmayı tanıması.",
+      "cozum": "Tek @id'li Organization; logo, sosyal hesaplar sameAs, contactPoint.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "yerel_isletme",
+      "grup": "sema",
+      "ad": "LocalBusiness: saat, konum, fiyat aralığı",
+      "oncelik": "Orta",
+      "neden": "Harita ve \"yakınımdaki\" aramaları, AI yerel önerileri.",
+      "cozum": "openingHoursSpecification, geo (enlem/boylam), priceRange, hasMap.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "website_sema",
+      "grup": "sema",
+      "ad": "WebSite site adı ve URL",
+      "oncelik": "Orta",
+      "neden": "WebSite site adı için kullanılır; Google sitelinks arama kutusu kaldırılmıştır.",
+      "cozum": "WebSite name/url değerlerini doğru kurun; SearchAction eksikliğini hata saymayın.",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/blog/2024/10/sitelinks-search-box"
+      ]
+    },
+    {
+      "kimlik": "breadcrumb",
+      "grup": "sema",
+      "ad": "BreadcrumbList ürün ve kategoride",
+      "oncelik": "Orta",
+      "neden": "Sonuçta adres yerine kategori yolu görünür.",
+      "cozum": "Ana sayfa > kategori > ürün sırasıyla.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "kategori_sema",
+      "grup": "sema",
+      "ad": "Kategori sayfasında ItemList/CollectionPage",
+      "oncelik": "Orta",
+      "neden": "Kategori sayfasındaki ürünler AI ve Google için liste olarak okunur.",
+      "cozum": "CollectionPage + ItemList (ilk sayfadaki ürün URL'leri).",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "blog_sema",
+      "grup": "sema",
+      "ad": "BlogPosting: yazar, tarih, görsel",
+      "oncelik": "Orta",
+      "neden": "Rehber içerikler AI cevaplarında kaynak olur; yazar ve tarih güven sinyalidir.",
+      "cozum": "Article/BlogPosting için gerçek headline, author (Person veya Organization), yayın/değişiklik tarihi ve uygun görsel kullanın.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "faq_sema",
+      "grup": "sema",
+      "ad": "FAQPage (görünen SSS ile birebir)",
+      "oncelik": "Düşük",
+      "neden": "Görünen soru-cevapla şema eşliği incelenir; Google FAQ zengin sonucu desteği ayrı ve güncel belgeden doğrulanır.",
+      "cozum": "Gerçek görünür SSS varsa uygun şema değerlendirilebilir. Sırf şema eklemek için SSS üretmeyin; zengin sonuç garantisi vermeyin.",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/updates"
+      ]
+    },
+    {
+      "kimlik": "urun_sema",
+      "grup": "sema",
+      "ad": "Ürün sayfasında Product",
+      "oncelik": "Yüksek",
+      "neden": "Fiyatlı zengin sonuç, Google Alışveriş ve AI alışveriş önerileri.",
+      "cozum": "Product şeması her ürün sayfasında.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "urun_offer",
+      "grup": "sema",
+      "ad": "Ürün teklif verisi ve uygunluk türü",
+      "oncelik": "Yüksek",
+      "neden": "Product snippet ve Merchant listing koşulları farklıdır; offers yokluğu tek başına Product’ı geçersiz yapmaz.",
+      "cozum": "Gerçek fiyat/para birimi/stok bilgisini doğrulayın. Review veya aggregateRating ile snippet uygunluğunu ayrıca değerlendirin; fiyat uydurmayın.",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/appearance/structured-data/product-snippet"
+      ]
+    },
+    {
+      "kimlik": "urun_gorsel",
+      "grup": "sema",
+      "ad": "Ürün şemasında çoklu görsel",
+      "oncelik": "Orta",
+      "neden": "Galeri, Google görseller ve AI ürün kartı.",
+      "cozum": "Ürünün gerçek ve kaliteli görsellerini kullanın; çoklu görsel yararlı olabilir, en az üç görsel evrensel zorunluluk değildir.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "urun_kimlik",
+      "grup": "sema",
+      "ad": "sku + gtin13/mpn",
+      "oncelik": "Orta",
+      "neden": "Ürünü fiyat karşılaştırma ve Merchant Center ile eşleştirir.",
+      "cozum": "sku = stok kodu; gerçek GS1 barkodu varsa gtin13, yoksa mpn (üretici kodu).",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "urun_aciklama",
+      "grup": "sema",
+      "ad": "Ürün açıklaması varlığı ve faydası",
+      "oncelik": "Yüksek",
+      "neden": "Faydalı ve doğru açıklama önemlidir; evrensel 120 karakter veya kelime sınırı yoktur.",
+      "cozum": "Ürünü ayırt eden gerçek bilgi ve özellikleri anlatın; sabit uzunluk için metin doldurmayın.",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=tr"
+      ]
+    },
+    {
+      "kimlik": "urun_kargo",
+      "grup": "sema",
+      "ad": "shippingDetails (kargo ücreti ve süresi)",
+      "oncelik": "Orta",
+      "neden": "Google ürün sonucunda \"Ücretsiz kargo, 2-4 gün\" yazısı buradan gelir.",
+      "cozum": "OfferShippingDetails: shippingRate, shippingDestination TR, deliveryTime (handling + transit).",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "urun_iade",
+      "grup": "sema",
+      "ad": "hasMerchantReturnPolicy",
+      "oncelik": "Orta",
+      "neden": "Google ürün sonucunda iade bilgisi; Merchant Center uyarısı.",
+      "cozum": "Gerçek iade politikasının kategori, gün, ücret ve ülke alanlarını görünür metinle eşleştirin; varsayılan 14 gün uydurmayın.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "urun_offer_ayrinti",
+      "grup": "sema",
+      "ad": "itemCondition, priceValidUntil, seller",
+      "oncelik": "Düşük",
+      "neden": "Search Console uyarılarını kapatır, satıcıyı markaya bağlar.",
+      "cozum": "Gerçek New/Used/RefurbishedCondition ve satıcı bilgisini kullanın. Fiyatın bitiş tarihi varsa doğru tarihi verin; yıl sonu tarihi uydurmayın.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "urun_puan",
+      "grup": "sema",
+      "ad": "aggregateRating (gerçek yorum varsa)",
+      "oncelik": "Düşük",
+      "neden": "Yıldızlı sonuç tıklanmayı artırır.",
+      "cozum": "Yalnız onaylı yorumdan; uydurma puan basılmaz.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "robots_txt",
+      "grup": "url",
+      "ad": "robots.txt + Sitemap satırı",
+      "oncelik": "Orta",
+      "neden": "Robots tarama politikasını taşır; dosya veya Sitemap satırı yokluğu tek başına indeks engeli değildir.",
+      "cozum": "Mevcut robots kurallarını amaçla karşılaştırın; sitemap kullanılıyorsa doğru adresi bildirebilirsiniz.",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=tr"
+      ]
+    },
+    {
+      "kimlik": "sitemap",
+      "grup": "url",
+      "ad": "Mevcut sitemap ağacı geçerli ve dolu",
+      "oncelik": "Yüksek",
+      "neden": "Sitemap keşfe yardımcı olur; Google’da görünmek için zorunlu değildir.",
+      "cozum": "Mevcut sitemap hatalarını düzeltin; canonical, indekslenmesi istenen URL’leri ekleyin. Küçük ve iyi bağlantılı sitede yokluğu tek başına kritik değildir.",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=tr"
+      ]
+    },
+    {
+      "kimlik": "sitemap_lastmod",
+      "grup": "url",
+      "ad": "Sitemap'te lastmod",
+      "oncelik": "Orta",
+      "neden": "Google changefreq ve priority'yi yok sayar, değişen sayfayı lastmod ile anlar. Bing ve ChatGPT araması da kullanır.",
+      "cozum": "Sayfanın anlamlı son değişiklik tarihini kullanın; her istekte bugüne güncellemeyin. updated_at yalnız içeriğin gerçek değişimini temsil ediyorsa uygundur.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "sitemap_gorsel",
+      "grup": "url",
+      "ad": "Görsel sitemap (image:image)",
+      "oncelik": "Düşük",
+      "neden": "Ürün görsellerinin Google Görseller'de dizinlenmesi.",
+      "cozum": "Ürün URL'sine image:image ile galeri görselleri.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "urun_url",
+      "grup": "url",
+      "ad": "Anlaşılır ve kararlı ürün URL’si",
+      "oncelik": "Orta",
+      "neden": "Açıklayıcı URL kullanıcıya yardımcıdır; ASCII, kimliksiz yol veya 75 karakter Google zorunluluğu değildir.",
+      "cozum": "Açıklayıcı ve tutarlı URL kullanın; mevcut adresi sırf puan için değiştirmeyin. Taşımada eski adresi doğru hedefe yönlendirin.",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=tr"
+      ]
+    },
+    {
+      "kimlik": "urun_canonical",
+      "grup": "url",
+      "ad": "Ürün kendi adresine canonical",
+      "oncelik": "Yüksek",
+      "neden": "Varyant/parametre kopyaları tek ürüne toplanır.",
+      "cozum": "canonical = /urun/slug (sorgusuz).",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "sonda_egik_cizgi",
+      "grup": "url",
+      "ad": "Sonda / ile tek adres",
+      "oncelik": "Düşük",
+      "neden": "/urun/x ve /urun/x/ iki ayrı adres sayılır.",
+      "cozum": "Sonda / olan isteği 301 ile çıplak adrese gönderin (canonical da birleştirir).",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "sayfalama_canonical",
+      "grup": "url",
+      "ad": "Sayfalamada her sayfa kendi canonical'ı",
+      "oncelik": "Orta",
+      "neden": "Sayfalama sayfaları farklı içerik taşır; her birinin canonical ve bağlantıları birlikte değerlendirilir.",
+      "cozum": "Sayfalama için kendine canonical tercih edin; filtreleri tek tip noindex veya ilk sayfa canonical’a zorlamayın, içerik ve amaca göre karar verin.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "gercek_404",
+      "grup": "url",
+      "ad": "Olmayan sayfa gerçek 404",
+      "oncelik": "Orta",
+      "neden": "Soft 404 tarama bütçesini yer.",
+      "cozum": "404 durum kodu + yararlı 404 sayfası.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "https_yonlendirme",
+      "grup": "url",
+      "ad": "http → https 301",
+      "oncelik": "Yüksek",
+      "neden": "Tek ve güvenli adres.",
+      "cozum": "Sunucuda 301 + HSTS.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "llms_txt",
+      "grup": "ai",
+      "ad": "/llms.txt dolu",
+      "oncelik": "Düşük",
+      "neden": "Bazı hizmetler için yardımcı/deneysel dosyadır; Google AI arama görünürlüğü gereksinimi değildir.",
+      "cozum": "Somut tüketicisi ve ihtiyacı varsa güncel yardımcı dosya sunun; yokluğunu sıralama hatası saymayın.",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/appearance/ai-features"
+      ]
+    },
+    {
+      "kimlik": "llms_full",
+      "grup": "ai",
+      "ad": "/llms-full.txt (ürün ve içerik dökümü)",
+      "oncelik": "Düşük",
+      "neden": "Hizmete bağlı yardımcı içerik çıktısıdır; okunacağı veya alıntılanacağı garanti değildir.",
+      "cozum": "Yalnız gerekli ve herkese açık içeriği güncel tutun; özel fiyat veya kişisel veri açmayın.",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/appearance/ai-features"
+      ]
+    },
+    {
+      "kimlik": "ai_arama_botlari",
+      "grup": "ai",
+      "ad": "AI arama botları engelli değil",
+      "oncelik": "Yüksek",
+      "neden": "Taranabilirlik görünürlük koşullarından biridir; sağlayıcı politikası ve kullanılan kaynaklar değişebilir.",
+      "cozum": "İlgili botun örnek URL’ye erişimini robots ve sunucu katmanında inceleyin; tüm asistanlarda görünürlük garantisi vermeyin.",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec"
+      ]
+    },
+    {
+      "kimlik": "ai_egitim_botlari",
+      "grup": "ai",
+      "ad": "AI eğitim botları politikası",
+      "oncelik": "Düşük",
+      "neden": "Eğitime izin vermek kullanıcı tercihidir, başarı puanı değildir.",
+      "cozum": "Eğitim ve arama politikalarını ayırıp kullanıcının tercihini kaydedin.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "ai_bot_acik_liste",
+      "grup": "ai",
+      "ad": "robots.txt'de AI botları adıyla",
+      "oncelik": "Düşük",
+      "neden": "Botlara ayrı isimli grup açmak zorunlu değildir.",
+      "cozum": "İlgili botun en özgül grubunu ve genel * grubunu doğrulayın; kör Allow eklemeyin.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "ai_bot_erisim",
+      "grup": "ai",
+      "ad": "Bot UA denemesi ve gerçek erişim ayrımı",
+      "oncelik": "Yüksek",
+      "neden": "robots izin verse de hosting WAF'ı 403/429 dönerse bot içerik alamaz.",
+      "cozum": "UA taklidini ön bulgu olarak raporlayın; doğrulanmış bot IP/log/sağlayıcı araçlarıyla erişimi ayrıca doğrulayın.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "merchant_feed",
+      "grup": "ai",
+      "ad": "Google Merchant ürün feed'i",
+      "oncelik": "Orta",
+      "neden": "Ürün satışı ve ilgili katalog platformu varsa uygulanır; feed Merchant uygunluğu ayrıca incelenir.",
+      "cozum": "Gerçek ürün verisini güncel platform spesifikasyonuna göre doğrulayın; gizli/özel feed yolunu varsaymayın.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "dogrulama_google",
+      "grup": "dogrulama",
+      "ad": "Google Search Console doğrulaması",
+      "oncelik": "Orta",
+      "neden": "Dizinleme hatası, sorgu ve sitemap raporu.",
+      "cozum": "Panelden girilebilen google-site-verification meta alanı (ya da DNS TXT).",
+      "dayanak_turu": "platform",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "dogrulama_bing",
+      "grup": "dogrulama",
+      "ad": "Bing Webmaster doğrulaması",
+      "oncelik": "Orta",
+      "neden": "Bing Webmaster kendi arama görünürlüğünü izlemeye yardımcı olur; diğer AI hizmetlerinde alıntı garantisi değildir.",
+      "cozum": "msvalidate.01 meta alanı, Bing Webmaster'a sitemap gönderimi.",
+      "dayanak_turu": "platform",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "dogrulama_yandex",
+      "grup": "dogrulama",
+      "ad": "Yandex Webmaster doğrulaması",
+      "oncelik": "Düşük",
+      "neden": "Türkiye'de Yandex payı küçük ama IndexNow ortağıdır.",
+      "cozum": "yandex-verification meta alanı.",
+      "dayanak_turu": "platform",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "dogrulama_facebook",
+      "grup": "dogrulama",
+      "ad": "Facebook alan adı doğrulaması",
+      "oncelik": "Orta",
+      "neden": "Meta reklamlarında dönüşüm olaylarını yapılandırma ve link önizlemesini düzenleme yetkisi.",
+      "cozum": "facebook-domain-verification meta alanı.",
+      "dayanak_turu": "platform",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "dogrulama_pinterest",
+      "grup": "dogrulama",
+      "ad": "Pinterest doğrulaması",
+      "oncelik": "Düşük",
+      "neden": "Zengin pin ve katalog.",
+      "cozum": "p:domain_verify meta alanı.",
+      "dayanak_turu": "platform",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "olcum_ga4",
+      "grup": "olcum",
+      "ad": "Google Analytics 4",
+      "oncelik": "Düşük",
+      "neden": "İlgili ölçüm/reklam platformu kullanılıyorsa uygulanır; organik SEO zorunluluğu değildir. Trafik, kaynak (AI yönlendirmeleri dahil) ve dönüşüm ölçümü.",
+      "cozum": "Panelde GA4 ölçüm kimliği; onay sonrası yükleme.",
+      "dayanak_turu": "platform",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "olcum_gtm",
+      "grup": "olcum",
+      "ad": "Google Tag Manager",
+      "oncelik": "Düşük",
+      "neden": "İlgili ölçüm/reklam platformu kullanılıyorsa uygulanır; organik SEO zorunluluğu değildir. Kod değiştirmeden etiket eklemek.",
+      "cozum": "Panelde GTM kimliği; noscript iframe body başında.",
+      "dayanak_turu": "platform",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "olcum_consent",
+      "grup": "olcum",
+      "ad": "Consent Mode v2",
+      "oncelik": "Düşük",
+      "neden": "İlgili ölçüm/reklam platformu kullanılıyorsa uygulanır; organik SEO zorunluluğu değildir. Desteklenen Google etiketlerinde rıza sinyalleri için teknik mekanizmadır; kurulum tek başına hukuki uyum kanıtı değildir.",
+      "cozum": "İlgili dört sinyalin başlangıcını ve ret/onay sonrası güncellenmesini ağ istekleriyle doğrulayın.",
+      "dayanak_turu": "platform",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "olcum_meta_pixel",
+      "grup": "olcum",
+      "ad": "Meta (Facebook/Instagram) Pixel",
+      "oncelik": "Düşük",
+      "neden": "İlgili ölçüm/reklam platformu kullanılıyorsa uygulanır; organik SEO zorunluluğu değildir. Instagram/Facebook reklam dönüşümü ve yeniden pazarlama.",
+      "cozum": "Panelde Pixel kimliği; pazarlama onayıyla yükleme; ViewContent, AddToCart, InitiateCheckout, Purchase olayları.",
+      "dayanak_turu": "platform",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "olcum_google_ads",
+      "grup": "olcum",
+      "ad": "Google Ads dönüşüm etiketi",
+      "oncelik": "Düşük",
+      "neden": "İlgili ölçüm/reklam platformu kullanılıyorsa uygulanır; organik SEO zorunluluğu değildir. Reklam harcamasının satışa dönüşünü ölçer.",
+      "cozum": "Panelde AW- kimliği ve satın alma dönüşüm etiketi.",
+      "dayanak_turu": "platform",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "olcum_tiktok",
+      "grup": "olcum",
+      "ad": "TikTok Pixel",
+      "oncelik": "Düşük",
+      "neden": "İlgili ölçüm/reklam platformu kullanılıyorsa uygulanır; organik SEO zorunluluğu değildir. TikTok reklamı yapılacaksa.",
+      "cozum": "Panelde kimlik, pazarlama onayıyla.",
+      "dayanak_turu": "platform",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "olcum_clarity",
+      "grup": "olcum",
+      "ad": "Microsoft Clarity",
+      "oncelik": "Düşük",
+      "neden": "İlgili ölçüm/reklam platformu kullanılıyorsa uygulanır; organik SEO zorunluluğu değildir. Ücretsiz ısı haritası ve oturum kaydı.",
+      "cozum": "Panelde Clarity kimliği, analitik onayıyla.",
+      "dayanak_turu": "platform",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "olcum_yandex",
+      "grup": "olcum",
+      "ad": "Yandex Metrika",
+      "oncelik": "Düşük",
+      "neden": "İlgili ölçüm/reklam platformu kullanılıyorsa uygulanır; organik SEO zorunluluğu değildir. Ücretsiz webvisor; isteğe bağlı.",
+      "cozum": "Panelde kimlik, analitik onayıyla.",
+      "dayanak_turu": "platform",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "olcum_pinterest",
+      "grup": "olcum",
+      "ad": "Pinterest Tag",
+      "oncelik": "Düşük",
+      "neden": "İlgili ölçüm/reklam platformu kullanılıyorsa uygulanır; organik SEO zorunluluğu değildir. Pinterest reklamı yapılacaksa.",
+      "cozum": "Panelde kimlik.",
+      "dayanak_turu": "platform",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "olcum_eticaret_olay",
+      "grup": "olcum",
+      "ad": "E-ticaret olayları (view_item, add_to_cart, purchase)",
+      "oncelik": "Düşük",
+      "neden": "İlgili ölçüm/reklam platformu kullanılıyorsa uygulanır; organik SEO zorunluluğu değildir. GA4 ürün raporları ve reklam optimizasyonu olaysız çalışmaz.",
+      "cozum": "Tek ölçüm katmanı: dataLayer ecommerce olayları GA4, Meta ve TikTok adlarına eşlenir (view_item, view_item_list, search, add_to_cart, begin_checkout, purchase).",
+      "dayanak_turu": "platform",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "gorsel_lazy",
+      "grup": "performans",
+      "ad": "loading=lazy",
+      "oncelik": "Orta",
+      "neden": "LCP ve veri tasarrufu.",
+      "cozum": "Ekran altı görsellerde lazy, ilk görselde fetchpriority=high.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "gorsel_srcset",
+      "grup": "performans",
+      "ad": "srcset / duyarlı görsel",
+      "oncelik": "Orta",
+      "neden": "Mobilde küçük görsel iner, Core Web Vitals iyileşir.",
+      "cozum": "Yüklemede 400/800/1200 genişlik türevleri + srcset.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "gorsel_modern",
+      "grup": "performans",
+      "ad": "WebP/AVIF",
+      "oncelik": "Düşük",
+      "neden": "Daha küçük dosya.",
+      "cozum": "Yüklemede WebP türevi.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "gorsel_alt",
+      "grup": "performans",
+      "ad": "Görsel alt metinleri",
+      "oncelik": "Orta",
+      "neden": "Google Görseller ve erişilebilirlik.",
+      "cozum": "Ürün görselinde alt = ürün adı; süs görselinde alt=\"\" bilinçli.",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=tr"
+      ]
+    },
+    {
+      "kimlik": "on_baglanti",
+      "grup": "performans",
+      "ad": "preconnect / preload",
+      "oncelik": "Düşük",
+      "neden": "Font ve kritik CSS daha erken iner.",
+      "cozum": "Font ve CDN için preconnect, kritik CSS preload.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "kod_indexnow",
+      "grup": "kod",
+      "ad": "IndexNow bildirimi",
+      "oncelik": "Orta",
+      "neden": "Destekleyen arama motorlarına değişiklik bildirir; kabul edilmesi indekslenme veya sıralama garantisi değildir.",
+      "cozum": "İhtiyaç varsa doğru anahtar doğrulaması ve değişiklikte kuyruklu bildirim uygulayın; denetim sırasında POST atmayın.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "kod_slug_301",
+      "grup": "kod",
+      "ad": "Slug değişince otomatik 301",
+      "oncelik": "Orta",
+      "neden": "Elle değişen slug eski linkleri ve sıralamayı öldürür.",
+      "cozum": "Model gözlemcisi: slug değiştiyse eski yol için yönlendirme kaydı.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "kod_ai_referans",
+      "grup": "kod",
+      "ad": "AI'dan gelen trafik ayrı ölçülüyor",
+      "oncelik": "Düşük",
+      "neden": "ChatGPT/Perplexity/Gemini yönlendirmesini görmeden AI SEO'nun etkisi ölçülemez.",
+      "cozum": "GA4'te AI kaynak kanal grubu (chatgpt.com, perplexity.ai, gemini.google.com, claude.ai, copilot.microsoft.com).",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "kod_capi",
+      "grup": "kod",
+      "ad": "Sunucu taraflı dönüşüm (Meta CAPI / GA4 MP)",
+      "oncelik": "Düşük",
+      "neden": "Reklam engelleyici ve iOS kısıtında kaybolan satış olayları.",
+      "cozum": "Sipariş onayında kuyruklu Conversions API çağrısı (event_id ile tekilleştirme).",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "kod_csp",
+      "grup": "kod",
+      "ad": "Etiketler sıkı CSP ile uyumlu (nonce)",
+      "oncelik": "Yüksek",
+      "neden": "Pixel/GTM eklemek için CSP'yi unsafe-inline ile açmak XSS korumasını kaldırır.",
+      "cozum": "İstek başına nonce, etiket betikleri nonce'lu; CSP'ye yalnız gerekli alan adları.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "kod_icerik",
+      "grup": "kod",
+      "ad": "Ürün ve kategori içerik doluluğu",
+      "oncelik": "Yüksek",
+      "neden": "Şema ve feed ne kadar iyi olursa olsun boş açıklama AI'da anlatılamaz.",
+      "cozum": "Eksik gerçek ürün/kategori bilgilerini önceliklendirin; otomatik üretimi insan doğrulaması, özgün fayda ve kullanıcı kararı olmadan topluca uygulamayın.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "kod_panel_alanlari",
+      "grup": "kod",
+      "ad": "Panelde etiket ve doğrulama alanları",
+      "oncelik": "Orta",
+      "neden": "Editörün metadata ve platform kimliklerini yönetmesi bakım kolaylığıdır; Google sıralama gereksinimi değildir.",
+      "cozum": "SEO ayarlarına GA4, GTM, Meta Pixel, Google Ads, Clarity, doğrulama kodları, paylaşım görseli alanları.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "kod_faydali_icerik",
+      "ad": "Faydalı, özgün ve güncel içerik",
+      "oncelik": "Yüksek",
+      "cozum": "Örnek sayfaların arama niyetini karşılamasını, gerçek bilgi, kaynak ve güncelliğini okuyarak değerlendirin.",
+      "neden": "İçerik ve işletme bağlamıyla elle doğrulanır; HTML varlığı tek başına sonuç değildir.",
+      "grup": "kod",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=tr"
+      ]
+    },
+    {
+      "kimlik": "kod_ic_baglantilar",
+      "ad": "Taranabilir iç bağlantılar ve yetim sayfalar",
+      "oncelik": "Yüksek",
+      "cozum": "Önemli sayfalara a href ve açıklayıcı bağlantı metniyle ulaşımı, yetim sayfa adaylarını doğrulayın.",
+      "neden": "İçerik ve işletme bağlamıyla elle doğrulanır; HTML varlığı tek başına sonuç değildir.",
+      "grup": "kod",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=tr"
+      ]
+    },
+    {
+      "kimlik": "kod_render",
+      "ad": "Google ve kullanıcının gördüğü içerik",
+      "oncelik": "Yüksek",
+      "cozum": "Mobil tarayıcıda JS sonrası içerikle HTML’yi, CSS/JS erişimini ve varsa URL Denetleme sonucunu karşılaştırın.",
+      "neden": "İçerik ve işletme bağlamıyla elle doğrulanır; HTML varlığı tek başına sonuç değildir.",
+      "grup": "kod",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=tr"
+      ]
+    },
+    {
+      "kimlik": "kod_search_console",
+      "ad": "Gerçek indekslenme ve Search Console kanıtı",
+      "oncelik": "Yüksek",
+      "cozum": "Yetkili salt-okunur veriden kapsam, URL Denetleme ve sorgu/sayfa performansını değerlendirin; erişim yoksa ölçülemedi bırakın.",
+      "neden": "İçerik ve işletme bağlamıyla elle doğrulanır; HTML varlığı tek başına sonuç değildir.",
+      "grup": "kod",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/fundamentals/third-party-seo?hl=tr"
+      ]
+    },
+    {
+      "kimlik": "kod_video",
+      "ad": "Video sayfalarının koşullu SEO denetimi",
+      "oncelik": "Orta",
+      "cozum": "Video önemliyse açıklayıcı başlık, ilgili metin ve erişilebilir oynatıcıyı inceleyin; video yoksa gerekçeli uygulanamaz işaretleyin.",
+      "neden": "İçerik ve işletme bağlamıyla elle doğrulanır; HTML varlığı tek başına sonuç değildir.",
+      "grup": "kod",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=tr"
+      ]
+    },
+    {
+      "kimlik": "kod_spam",
+      "ad": "Spam ve yanıltıcı SEO uygulamaları",
+      "oncelik": "Yüksek",
+      "cozum": "Anahtar kelime doldurma, gizli içerik, düşük değerli toplu sayfa ve yanıltıcı vaatleri somut örnekle inceleyin.",
+      "neden": "İçerik ve işletme bağlamıyla elle doğrulanır; HTML varlığı tek başına sonuç değildir.",
+      "grup": "kod",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/essentials?hl=tr"
+      ]
+    },
+    {
+      "kimlik": "kod_olcum_takibi",
+      "ad": "Değişiklik sonrası gerçekçi etki takibi",
+      "oncelik": "Orta",
+      "cozum": "Başlangıç verisi ve değişiklik tarihiyle karşılaştırılabilir dönemleri izleyin; mevsimsellik ve eşzamanlı değişiklikleri belirtin.",
+      "neden": "İçerik ve işletme bağlamıyla elle doğrulanır; HTML varlığı tek başına sonuç değildir.",
+      "grup": "kod",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/fundamentals/do-i-need-seo?hl=tr"
+      ]
+    },
+    {
+      "kimlik": "kod_dil_bolgeler",
+      "ad": "Çok dilli/bölgeli sayfaların koşullu denetimi",
+      "oncelik": "Orta",
+      "cozum": "Birden çok dil/bölge varsa hreflang ve canonical tutarlılığını ilgili resmî belgeyle doğrulayın; tek dilde uygulanamaz bırakın.",
+      "neden": "İçerik ve işletme bağlamıyla elle doğrulanır; HTML varlığı tek başına sonuç değildir.",
+      "grup": "kod",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=tr"
+      ]
+    },
+    {
+      "kimlik": "kod_core_web_vitals",
+      "grup": "kod",
+      "ad": "Core Web Vitals saha ve laboratuvar ölçümü",
+      "oncelik": "Orta",
+      "neden": "HTML etiketlerinden LCP, INP veya CLS sonucu çıkarılamaz.",
+      "cozum": "Yetkili Search Console/CrUX saha verisini ve mobil Lighthouse laboratuvar ölçümünü tarih ve koşullarıyla ayrı raporlayın. Veri yoksa ölçülemedi bırakın.",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/appearance/page-experience"
+      ]
+    },
+    {
+      "kimlik": "hizmet_sema",
+      "grup": "sema",
+      "ad": "Hizmet sayfası Service şeması",
+      "oncelik": "Orta",
+      "neden": "Örnek ve işletme bağlamıyla doğrulanır; tek başına sıralama garantisi veya evrensel gereksinim değildir.",
+      "cozum": "Service kullanılmışsa gerçek hizmet, sağlayıcı ve hizmet bölgesini doğrulayın. Görünür fiyat/süre/garanti ve iletişim yollarını ayrıca inceleyin; şema yokluğu tek başına hata değildir.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "video_sema",
+      "grup": "sema",
+      "ad": "VideoObject ve gerçek video eşliği",
+      "oncelik": "Orta",
+      "neden": "Örnek ve işletme bağlamıyla doğrulanır; tek başına sıralama garantisi veya evrensel gereksinim değildir.",
+      "cozum": "Video varsa görünür oynatıcı ve güncel resmî VideoObject uygunluğunu doğrulayın; yoksa uygulanamaz işaretleyin.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "www_yonlendirme",
+      "grup": "url",
+      "ad": "www/non-www alternatif kök tutarlılığı",
+      "oncelik": "Orta",
+      "neden": "Örnek ve işletme bağlamıyla doğrulanır; tek başına sıralama garantisi veya evrensel gereksinim değildir.",
+      "cozum": "Yapılandırmadaki alternatif_kok adresinin doğru köke 301/308 yönlendirmesini veya canonical tutarlılığını inceleyin; kör yönlendirme önermeyin.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "cift_kacis",
+      "grup": "temel",
+      "ad": "Başlık ve meta alanlarında çift kaçış adayı",
+      "oncelik": "Orta",
+      "neden": "Örnek ve işletme bağlamıyla doğrulanır; tek başına sıralama garantisi veya evrensel gereksinim değildir.",
+      "cozum": "Başlık/meta/görünür içerikteki çift kaçışı doğrulayın; HTML örneği gösteren içerikte kasıtlı kaçışı hata saymayın.",
+      "dayanak_turu": "deneyim",
+      "kaynaklar": []
+    },
+    {
+      "kimlik": "sitemap_tutarlilik",
+      "grup": "url",
+      "ad": "Sitemap ile örnek sayfa canonical/index eşliği",
+      "oncelik": "Yüksek",
+      "neden": "Sitemap'te yalnız indekslenmesi istenen (index, 200) ve kendi adresine canonical veren URL'ler yer almalıdır.",
+      "cozum": "noindex veya farklı adrese canonical veren sayfaları sitemap'ten çıkarın; önemli indekslenebilir sayfaların sitemap'e girdiğini doğrulayın.",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap?hl=tr"
+      ]
+    },
+    {
+      "kimlik": "ic_baglanti",
+      "grup": "url",
+      "ad": "Taranabilir iç bağlantı (<a href>) ve çapa metni",
+      "oncelik": "Yüksek",
+      "neden": "Arama motorları sayfaları taranabilir <a href> bağlantıları ve açıklayıcı çapa metinleriyle keşfeder.",
+      "cozum": "Önemli sayfalara gerçek HTTP/HTTPS veya göreli <a href> ile bağlanın; javascript: adreslerinden, boş linklerden ve 'tıklayın' gibi belirsiz metinlerden kaçının.",
+      "dayanak_turu": "resmi_oneri",
+      "kaynaklar": [
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=tr"
+      ]
+    }
+  ]
+}

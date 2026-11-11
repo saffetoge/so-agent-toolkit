@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "EKLENTI ADI",
+  "version": "1.0",
+  "description": "Ne yaptığı tek cümleyle.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://ornek.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://ornek.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "ikon16.png",
+    "48": "ikon48.png",
+    "128": "ikon128.png"
+  }
+}

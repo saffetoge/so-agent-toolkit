@@ -1,0 +1,15 @@
+{
+  "name": "so-agent-toolkit",
+  "description": "AI kodlama ajanları için Türkçe araç seti: SEO, güvenlik denetimi, derin araştırma, mimari, mobil uygulama, PDF ve arayüz skill'leri ile takım ajanları",
+  "owner": {
+    "name": "saffetoge"
+  },
+  "plugins": [
+    {
+      "name": "so-agent-toolkit",
+      "description": "AI kodlama ajanları için Türkçe araç seti: SEO, güvenlik denetimi, derin araştırma, mimari, mobil uygulama, PDF ve arayüz skill'leri ile takım ajanları",
+      "version": "1.0.0",
+      "source": "./"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "so-agent-toolkit",
+  "description": "AI kodlama ajanları için Türkçe araç seti: SEO, güvenlik denetimi, derin araştırma, mimari, mobil uygulama, PDF ve arayüz skill'leri ile takım ajanları",
+  "version": "1.0.0",
+  "author": {
+    "name": "saffetoge"
+  },
+  "homepage": "https://github.com/saffetoge/so-agent-toolkit",
+  "repository": "https://github.com/saffetoge/so-agent-toolkit",
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "agents",
+    "turkce",
+    "seo",
+    "security",
+    "laravel",
+    "pdf"
+  ]
+}

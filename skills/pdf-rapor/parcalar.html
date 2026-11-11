@@ -1,0 +1,281 @@
+<!-- ### SAYFA İSKELETİ ########################################
+     Her sayfa bir <section>. Üst bar ve alt bilgi her sayfada tekrar yazılır,
+     sayfa numarası kendiliğinden artar. Kapak için class="s kapak" kullan. -->
+
+<section class="s">
+  <div class="ustbar">
+    <span class="marka">MARKA</span>
+    <span class="sag">Ticari teklif</span>
+  </div>
+
+  <div class="govde">
+    <h2>Bölüm başlığı</h2>
+    <p>İçerik.</p>
+  </div>
+
+  <div class="altbilgi">
+    <span>Marka · Ticari teklif</span>
+    <span>Sayfa <span class="sayfano"></span></span>
+  </div>
+</section>
+
+
+<!-- ### İÇİNDEKİLER ###########################################
+     Ne zaman: 5 sayfadan uzun raporlarda, kapaktan sonraki sayfa. -->
+
+<ul class="icindekiler">
+  <li><span class="ad">Yönetici özeti</span><span class="nokta"></span><span class="no">2</span></li>
+  <li><span class="ad">Yöntem ve kapsam</span><span class="nokta"></span><span class="no">3</span></li>
+  <li><span class="ad">Bulgular</span><span class="nokta"></span><span class="no">5</span></li>
+  <li><span class="ad">Eksikler ve öneriler</span><span class="nokta"></span><span class="no">8</span></li>
+</ul>
+
+
+<!-- =========================================================================
+     BİLEŞEN GALERİSİ
+     Buradan kopyala, sablon.html içine yapıştır. Stiller şablonda hazır.
+     Her bileşenin üstünde ne zaman kullanılacağı yazıyor.
+     ========================================================================= -->
+
+
+<!-- ### KPI ŞERİDİ #############################################
+     Ne zaman: raporun en önemli 3-4 rakamı. Kapak altında ya da bölüm sonunda.
+     Kural: en fazla 4 kutu, her rakam ölçülmüş olmalı. -->
+
+<div class="kpi-serit">
+  <div class="kpi">
+    <div class="kpi-sayi">1.840</div>
+    <div class="kpi-ad">Toplam başvuru</div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-sayi">%94<small> geçti</small></div>
+    <div class="kpi-ad">Doğrulama başarısı</div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-sayi">1,8 sn</div>
+    <div class="kpi-ad">Ortalama yanıt süresi</div>
+  </div>
+</div>
+
+
+<!-- ### AÇIKLAMALI TABLO ######################################
+     Ne zaman: bileşen/görev, kalem/karşılık gibi iki sütunlu anlatım.
+     Kural: ilk sütun kalın ad + altında gri açıklama. -->
+
+<table>
+  <tr>
+    <th style="width:38%">Bileşen</th>
+    <th>Görevi</th>
+  </tr>
+  <tr>
+    <td><b>Çift GPU iş istasyonu</b>
+        <span class="alt">2 GPU, 192 GB GPU belleği</span></td>
+    <td>Ana cevap motoru. Günlük soru ve raporlar burada, bekletmeden yanıtlanır.</td>
+  </tr>
+  <tr>
+    <td><b>Yönlendirici katman</b>
+        <span class="alt">Yazılım, ayrı cihaz gerektirmez</span></td>
+    <td>Gelen isteği türüne göre doğru cihaza dağıtır.</td>
+  </tr>
+</table>
+
+
+<!-- ### BEDEL / TUTAR TABLOSU #################################
+     Ne zaman: maliyet, süre, adet dökümü. Toplam satırı teal ve kalın gelir. -->
+
+<table>
+  <tr>
+    <th style="width:8%">No</th>
+    <th>Kalem</th>
+    <th class="sayi">Yaklaşık bedel (KDV dahil)</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><b>Çift GPU iş istasyonu:</b> Xeon platform, kurulu yazılımlarla</td>
+    <td class="sayi">≈ 1.000.000 TL</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><b>Düğüm paketi:</b> 2 cihaz, bağlantı kablosu, güç adaptörleri</td>
+    <td class="sayi">≈ 400.000 TL</td>
+  </tr>
+  <tr class="toplam">
+    <td></td>
+    <td>Donanım toplamı</td>
+    <td class="sayi">≈ 1.400.000 TL</td>
+  </tr>
+</table>
+
+<p class="dipnot">Bedeller distribütör liste fiyatlarından yuvarlanmıştır; kesin fiyat sipariş
+öncesi teyitle netleştirilir.</p>
+
+
+<!-- ### DERECE TABLOSU (harvey ball) ##########################
+     Ne zaman: iki seçeneği ölçülemeyen boyutlarda karşılaştırma.
+     Kural: 5 daire sabit, dolu olanlara class="d" ver. Rakamla ölçtüysen bar kullan. -->
+
+<table>
+  <tr>
+    <th style="width:52%"></th>
+    <th class="orta">Kurumsal</th>
+    <th class="orta">Kurumsal Plus</th>
+  </tr>
+  <tr>
+    <td>Cevap hızı ve anlık kullanıcı kapasitesi</td>
+    <td class="orta"><span class="derece"><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i><i></i></span></td>
+    <td class="orta"><span class="derece"><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i></span></td>
+  </tr>
+  <tr>
+    <td>Yedeklilik ve arıza toleransı</td>
+    <td class="orta"><span class="derece"><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i></span></td>
+    <td class="orta"><span class="derece"><i class="d"></i><i class="d"></i><i class="d"></i><i></i><i></i></span></td>
+  </tr>
+</table>
+
+
+<!-- ### YATAY BAR #############################################
+     Ne zaman: aynı birimde ölçülmüş değerlerin kıyası (süre, sayı, yüzde).
+     Kural: width yüzdesi en büyük değere göre orantılı olmalı, uydurma. -->
+
+<div class="barlar">
+  <div class="bar-sat">
+    <div class="bar-ad">Yerel model</div>
+    <div class="bar-yol"><div class="bar-dolu" style="width:100%"></div></div>
+    <div class="bar-deger">1,8 sn</div>
+  </div>
+  <div class="bar-sat">
+    <div class="bar-ad">Bulut API</div>
+    <div class="bar-yol"><div class="bar-dolu ikinci" style="width:47%"></div></div>
+    <div class="bar-deger">0,85 sn</div>
+  </div>
+</div>
+
+
+<!-- ### PAY ŞERİDİ ############################################
+     Ne zaman: bir bütünün dağılımı (bütçe kalemleri, süre payları, hata türleri).
+     Kural: yüzdeler 100'e tamamlanmalı. t3 ve daha açık tonlara koyu-yazi sınıfı
+     ekle, yoksa beyaz yazı okunmaz. -->
+
+<div class="pay">
+  <div style="width:56%; background:var(--t1)">%56</div>
+  <div style="width:24%; background:var(--t2)">%24</div>
+  <div class="koyu-yazi" style="width:13%; background:var(--t3)">%13</div>
+  <div class="koyu-yazi" style="width:7%; background:var(--t4)">%7</div>
+</div>
+<div class="lejant">
+  <span><i style="background:var(--t1)"></i>Donanım</span>
+  <span><i style="background:var(--t2)"></i>Dönüşüm programı</span>
+  <span><i style="background:var(--t3)"></i>Kurulum</span>
+  <span><i style="background:var(--t4)"></i>Diğer</span>
+</div>
+
+
+<!-- ### DONUT ################################################
+     Ne zaman: tek bir oranı öne çıkarma. En fazla 3 donut yan yana.
+     Kural: stroke-dasharray'in ilk sayısı yüzdedir, ikincisi 100 eksiğidir. -->
+
+<div class="donutlar">
+  <div class="donut-kutu">
+    <svg class="donut" viewBox="0 0 42 42">
+      <circle class="yol" cx="21" cy="21" r="15.9155"/>
+      <circle class="dolu" cx="21" cy="21" r="15.9155" stroke-dasharray="94 6"/>
+      <text x="21" y="24">%94</text>
+    </svg>
+    <div class="donut-ad">Doğrulanan kayıt</div>
+  </div>
+  <div class="donut-kutu">
+    <svg class="donut" viewBox="0 0 42 42">
+      <circle class="yol" cx="21" cy="21" r="15.9155"/>
+      <circle class="dolu" cx="21" cy="21" r="15.9155" stroke-dasharray="61 39"/>
+      <text x="21" y="24">%61</text>
+    </svg>
+    <div class="donut-ad">Disk kullanımı</div>
+  </div>
+</div>
+
+
+<!-- ### ZAMAN ÇİZELGESİ #######################################
+     Ne zaman: plan, yol haritası, kurulum aşamaları, olay sırası.
+     Kural: tamamlanan adıma class="bitti" ver, noktası dolar. -->
+
+<ol class="zaman">
+  <li class="bitti">
+    <div class="ne-zaman">Hafta 1-2</div>
+    <div class="bas">Kurulum ve veri aktarımı</div>
+    <p>Cihazlar devreye alınır, firma arşivi indekslenir.</p>
+  </li>
+  <li>
+    <div class="ne-zaman">Hafta 3-6</div>
+    <div class="bas">Pilot kullanım</div>
+    <p>Beş kişilik çekirdek ekip günlük işte kullanır, geri bildirim toplanır.</p>
+  </li>
+</ol>
+
+
+<!-- ### AKIŞ / SÜREÇ ##########################################
+     Ne zaman: 3-4 adımlı bir sürecin sırayla anlatımı.
+     Kural: en fazla 4 adım, her adım tek cümle. -->
+
+<div class="akis">
+  <div class="akis-adim">
+    <div class="akis-no">01</div>
+    <div class="bas">İstek gelir</div>
+    <p>Kullanıcı sorusu yönlendirici katmana düşer.</p>
+  </div>
+  <div class="akis-adim">
+    <div class="akis-no">02</div>
+    <div class="bas">Sınıflanır</div>
+    <p>Basit soru mu, belge işleme mi ayrılır.</p>
+  </div>
+  <div class="akis-adim">
+    <div class="akis-no">03</div>
+    <div class="bas">Yanıt döner</div>
+    <p>Uygun cihaz işi alır, sonuç kaynağıyla verilir.</p>
+  </div>
+</div>
+
+
+<!-- ### KUTULAR ###############################################
+     Ne zaman: uyarı, kısıt, eksik iş, dikkat çekilecek sonuç.
+     Sınıflar: bilgi (teal), iyi (yeşil), uyari (hardal), kotu (kiremit). -->
+
+<div class="kutu uyari">
+  <div class="bas">Ölçülmedi</div>
+  <p>Eşzamanlı 25 kullanıcı senaryosu test edilmedi; rakam üretici beyanıdır.</p>
+</div>
+
+<div class="kutu bilgi">
+  <div class="bas">Not</div>
+  <p>Bilgi tabanı paketler arasında ortaktır, geçişte kurulum sıfırdan yapılmaz.</p>
+</div>
+
+
+<!-- ### DURUM ROZETİ ##########################################
+     Ne zaman: tablo hücresinde kısa durum. Sınıflar: iyi / uyari / kotu / dolu. -->
+
+<span class="rozet iyi">Geçti</span>
+<span class="rozet uyari">Kısmi</span>
+<span class="rozet kotu">Başarısız</span>
+<span class="rozet dolu">Öneri</span>
+
+
+<!-- ### ALINTI ################################################ -->
+
+<blockquote>
+  <p>Tercihi belirleyen soru: öncelik kesintisiz çalışma ise Kurumsal, günlük cevap hızı
+  ise Kurumsal Plus.</p>
+</blockquote>
+
+
+<!-- ### İKİ SÜTUN ############################################# -->
+
+<div class="ikili">
+  <div>
+    <h3>Artıları</h3>
+    <ul><li>Veri firma içinde kalır</li><li>Aylık abonelik yok</li></ul>
+  </div>
+  <div>
+    <h3>Eksileri</h3>
+    <ul><li>Peşin donanım maliyeti</li><li>Bakım firmaya ait</li></ul>
+  </div>
+</div>

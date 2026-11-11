@@ -1,0 +1,25 @@
+{
+  "siteler": [
+    {
+      "ad": "Bizim site",
+      "biz": true,
+      "kok": "https://ornek.invalid",
+      "profil": "eticaret",
+      "bot_kontrol": false,
+      "sitemap_siniri": 100,
+      "sayfalar": {
+        "anasayfa": "/",
+        "urun": "/urun/ornek",
+        "kategori": "/kategori/ornek",
+        "kategori_sayfa2": "/kategori/ornek?page=2",
+        "blog": "/blog/ornek",
+        "hizmet": "/hizmet/ornek"
+      },
+      "uygulanamaz": {
+        "yerel_isletme": "Fiziksel mağaza bulunmayan örnek işletme",
+        "olcum_tiktok": "TikTok reklamı kullanılmıyor"
+      },
+      "alternatif_kok": "https://www.ornek.invalid"
+    }
+  ]
+}
